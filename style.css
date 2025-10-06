@@ -572,13 +572,46 @@ footer p {
     }
 }
 
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
 .animate-on-scroll {
     opacity: 0;
     transform: translateX(100px) scale(0.5);
     transition: all 0.5s ease;
 }
 
+.left-slide {
+  animation: slideInLeft 1.5s ease-out forwards;
+}
+
+.right-slide {
+  animation: slideInRight 1s ease-out forwards;
+}
+
+
 /* This will trigger the animation */
 .animate-on-scroll.active {
-    animation: appear 1s ease forwards;
+    animation: appear 1.5s ease forwards;
 }
