@@ -123,8 +123,9 @@
         text-align: justify;
     }
     .text-btn {
-        width: 43%;
-        margin-right: 45px;
+        /* width: 43%; */
+        /* margin-right: 45px; */
+        
     }
 
     .inputs input {
@@ -132,7 +133,15 @@
     }
 
     .inputs textarea {
-        width: 100%;
+        width: 95%;
         height: 125px;
+    }
+    .input-message{
+        margin-left: 165px !important;
+        width: 70%;
+        display: block;
+    }
+    .input-message label {
+        /* margin-left: 15px; */
     }
 }
