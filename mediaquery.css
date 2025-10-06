@@ -128,11 +128,11 @@
     }
 
     .inputs input {
-        width: 60%;
+        width: 100%;
     }
 
     .inputs textarea {
-        width: 65%;
+        width: 100%;
         height: 125px;
     }
 }

@@ -28,3 +28,39 @@ Frontend: HTML, CSS, Bootstrap, JavaScript
 Animations: CSS Keyframes, scroll-triggered animations
 
 Hosting: GitHub Pages
+
+Folder Structure
+Portfolio/
+│
+├── Assets/                # Images, icons, and resume PDF
+├── style.css              # Main stylesheet
+├── mediaquery.css         # Responsive media queries
+├── script.js              # JavaScript for animations, form, and menu
+├── index.html             # Main HTML page
+└── README.md              # Project documentation
+
+How to View
+
+Clone or download the repository:
+
+git clone https://github.com/Surya-D-FreeCoder/Your-Portfolio-Repo.git
+
+
+Open index.html in a web browser.
+
+Or visit the live GitHub Pages link (if hosted):
+
+https://surya-d-freecoder.github.io/
+
+Contact
+
+Email: suryarsk03@gmail.com
+
+LinkedIn: https://www.linkedin.com/in/surya-kumar-99b8582a7/
+
+GitHub: https://github.com/Surya-D-FreeCoder
+
+License
+
+This project is open source and available under the MIT License
+.
