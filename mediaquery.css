@@ -25,6 +25,7 @@
     }
     #hamburgur-nav {
         display: flex;
+        z-index: 10;
     }
 
     #experience, .experience-detail-container {
@@ -70,11 +71,15 @@
 }
 
 @media screen and (max-width:600px) {
+    #hamburgur-nav .open {
+        z-index: 1;
+    }
     #contact {
         height: 40vh;
     }
     #profile {
-        height: auto;
+        margin-top: 6vh;
+        height: 30vh;
         margin-bottom: 0;
     }
     article {
