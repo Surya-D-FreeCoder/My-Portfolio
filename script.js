@@ -1,6 +1,8 @@
 function toggleMenu() {
+    const nav = document.getElementById("hamburgur-nav");
     const menu = document.querySelector(".menu-link");
     const icon = document.querySelector(".hamburgur-icon");
+    nav.classList.toggle("open");
     menu.classList.toggle("open");
     icon.classList.toggle("open");
 }
