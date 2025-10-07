@@ -151,14 +151,17 @@
 
     .inputs input {
         width: 83%;
+        display: block;
+        margin: 13px auto;
     }
 
     .inputs textarea {
-        width: 82%;
+        width: 84%;
         height: 125px;
         position: absolute;
-        left: -11px;
+        left: 0px;
         margin-top: 4vh;
+        
     }
     .input-message{
         margin-left: 165px !important;
@@ -172,5 +175,8 @@
 
     .form-btn {
         margin-top: 16vh;
+    }
+    .inputs {
+
     }
 }
