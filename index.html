@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="mediaquery.css" />
   </head>
   <body>
+
+    <div id="to-top"></div>
     <nav id="desktop-nav">
       <div class="logo">Surya Kumar R</div>
       <div>
@@ -37,6 +39,8 @@
         </div>
       </div>
     </nav>
+
+ 
 
     <!-- SECTIONS -->
 <!-- The image is in comment undo the comment -->
@@ -444,7 +448,7 @@
         <nav>
             <div class="nav-link-container">
                 <ul class="nav-links">
-                    <li><a href="#desktop-nav">Home</a></li>
+                    <li><a href="#" onclick="window.scrollTo({ top: 0, behavior: 'instant' }); setTimeout(() => location.href = location.origin + location.pathname, 50); return false;">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#experience">Experience</a></li>
                     <li><a href="#project">Projects</a></li>
