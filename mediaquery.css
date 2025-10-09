@@ -71,6 +71,7 @@
 }
 
 @media screen and (max-width:600px) {
+
     #hamburgur-nav.open {
         /* position: fixed;
         top: 0;
@@ -84,7 +85,7 @@
     #profile {  
         position: relative;
         margin-top: 1vh;
-        height: 30vh;
+        height: 45vh;
         margin-bottom: 14vh;
         transition: transform 0.5s ease;
     }
@@ -174,7 +175,7 @@
     }
 
     .form-btn {
-        margin-top: 16vh;
+        margin-top: 22vh;
     }
     .inputs {
 
