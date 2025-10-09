@@ -86,12 +86,12 @@
         position: relative;
         margin-top: 1vh;
         height: 45vh;
-        margin-bottom: 16vh;
+        margin-bottom: 22vh;
         transition: transform 0.5s ease;
     }
 
   #hamburgur-nav.open ~ #profile {
-    transform: translateY(15vh);
+    transform: translateY(21vh);
   }
 
       #contact {
