@@ -9,11 +9,11 @@
   </head>
   <body>
 
-    <div id="to-top"></div>
     <nav id="desktop-nav">
       <div class="logo">Surya Kumar R</div>
       <div>
         <ul class="nav-links">
+           <li><a href="#" onclick="window.scrollTo({ top: 0, behavior: 'instant' }); setTimeout(() => location.href = location.origin + location.pathname, 50); return false;">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#experience">Knowledge</a></li>
           <li><a href="#project">Projects</a></li>
@@ -32,6 +32,7 @@
           <span></span>
         </div>
         <div class="menu-link">
+           <li><a href="#" onclick="window.scrollTo({ top: 0, behavior: 'instant' }); setTimeout(() => location.href = location.origin + location.pathname, 50); return false;">Home</a></li>
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
           <li><a href="#experience" onclick="toggleMenu()">Knowledge</a></li>
           <li><a href="#project" onclick="toggleMenu()">Projects</a></li>
@@ -61,7 +62,7 @@
             class="btn btn-color-2"
             onclick="window.open('./Assets/Surya Kumar R Resume.pdf')"
           >
-            Download CV
+            Open CV
           </button>
           <button class="btn btn-color-1" onclick="location.href='./#contact'">
             Contact Info
@@ -88,8 +89,9 @@
       <p class="section-text-p1">Get To Know More</p>
       <h1 class="title">About Me</h1>
       <div class="section-container">
-        
+
         <!-- <div class="section-pic-container">
+          This is where another image can be added
                 <img src="./Assets/about-pic.png" alt="Profile Picture"
                 class="about-pic">
             </div> -->
@@ -445,17 +447,17 @@
     </section>
 
     <footer>
-        <nav>
+        <!-- <nav>
             <div class="nav-link-container">
                 <ul class="nav-links">
                     <li><a href="#" onclick="window.scrollTo({ top: 0, behavior: 'instant' }); setTimeout(() => location.href = location.origin + location.pathname, 50); return false;">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#experience">Experience</a></li>
                     <li><a href="#project">Projects</a></li>
-                    <!-- <li><a href="#contacts">Contact</a></li> -->
+                    <li><a href="#contacts">Contact</a></li>
                 </ul>
             </div>
-        </nav>
+        </nav> -->
         <p>Copyright &#169; 2025 Surya Kumar R. All Rights Reserved</p>
     </footer>
 

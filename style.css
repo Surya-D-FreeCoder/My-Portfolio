@@ -24,43 +24,50 @@ p {
 
 /* Transition */
 
+/* This is to make the image in round */
 .my-profile {
     border-radius: 50%;
 }
 
+/* This is for all a tag & btn class to be smoothly occur */
 a, 
 .btn {
     transition: all 600ms ease;
 }
 
+
 /* Desktop Nav */
 
 
-
-nav, 
-.nav-links {
-    display: flex;
-}
-
+    /* This is for targeting the header and styles it applicable for both desktop & mobile view*/
 nav {
+    display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 17vh;
+    height: 10vh;
+    position: fixed;        
+    top: 0;                 
+    left: 0;                
+    width: 100%;            
+    z-index: 1000;          
+    background-color: white; 
 
 }
-
+    /* This is for the menu items to be targetted */
 .nav-links {
+    display: flex;
     gap: 4rem;
     list-style: none;
     font-size: 1.5 rem;
 }
 
+    /* This covers the menu word styling part the link */
 a {
     text-decoration: none;
     text-decoration-color: white;
     color: black;
 }
-
+    /* What to do when the word got hovers */
 a:hover {
     color: gray;
     text-decoration: underline;
@@ -68,6 +75,7 @@ a:hover {
     text-decoration-color: rgb(181,181,181);
 }
 
+    /* This is the logo of the page i.e) my name */
 .logo {
     font-size: 2rem;
 }
@@ -78,19 +86,19 @@ a:hover {
 
 /* Hamburgur Menu */
 
-/* To make it disappear when on the PC */
+    /* To make it disappear when on the PC */
 #hamburgur-nav {
     display: none;
     animation: appear 0.5s ease forwards;
 }
 
-/* This makes the icon and menubar in inline block */
+    /* This makes the icon and menubar in inline block */
 .hamburgur-menu {
     position: relative;
     display: inline-block;
 }
 
-/* Thisdefines the 3 line (hamburgur line) */
+/* This defines the part which will hold 3 line (hamburgur line) */
 .hamburgur-icon {
     display: flex;
     flex-direction: column;
@@ -108,6 +116,7 @@ a:hover {
     transition: all 0.3 ease-in-out;
 }
 
+    /* This is for how the menu should be displayed */
 .menu-link {
     position: absolute;
     top: 100%;
@@ -137,6 +146,7 @@ a:hover {
     max-height: 300px;
 }
 
+/* This part is for changing the 3 lines into the 'X' mark when it is in open state*/
 .hamburgur-icon.open span:first-child{
     transform: rotate(45deg) translate(10px, 5px);
 }
@@ -146,6 +156,8 @@ a:hover {
 .hamburgur-icon.open span:last-child{
     transform: rotate(-45deg) translate(10px, -5px);
 }
+
+/* This is for how it should display when it is in close state */
 .hamburgur-icon span:first-child {
     transform: none;
 }
@@ -159,6 +171,7 @@ a:hover {
 
 /* SECTION PART */
 
+/* This secttion part is like base rule which is applicable for all sections */
 section {
     padding-top: 4vh;
     min-height: 60vh;
@@ -168,20 +181,21 @@ section {
     min-height: fit-content;
 }
 
-.section-container {
-    display: flex;
-}
+
 
 /* PPROFILE SECTION */
 
+/* This targets the profile section */
 #profile {
     display: flex;
     justify-content: center;
     gap: 5rem;
+    margin-top: 15vh;
     height: 80vh;
     /* animation: appear 1s ease forwards; */
 }
 
+/* This targets how the image should look like */
 .section-pic-container {
     display: flex;
     height: 400px;
@@ -189,29 +203,36 @@ section {
     margin: auto 0;
 }
 
+/* This is for the text which are in the left side of the profile part */
 .section__text {
     align-self: center;
     text-align: center;
 }
 
+/* This targets the section text paragraph's font weight */
 .section__text p{
     font-weight: 600;
 }
 
+/* This is one kind of para format styling */
 .section-text-p1{
     text-align: center;
 }
+
+/* This is another kind of para format styling */
 .section-text-p2{
     font-size: 1.75rem;
     margin-bottom: 1rem;
 }
 
+/* This is for the title where the h1 elements are being used */
 .title {
     font-size: 3rem;
     text-align: center;
     /* animation: appear 1.5s ease forwards; */
 }
 
+/* This is for the social media content part styling */
 #socials-container {
     display: flex;
     justify-content: center;
@@ -227,7 +248,7 @@ section {
     height: 2rem;
 }
 
-/* Buttons   */
+/* Buttons => This part entirely targets the buttons part */
 
 .btn-container {
     display: flex;
@@ -281,40 +302,34 @@ section {
     animation: appear 1s ease forwards;
 }
 
-.about-containers {
-    gap: 2rem;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
-}
+/* This is in about part to display the items in flex */
+/* .section-container {
+    display: flex;
+} */
 
-.education {
-    text-align: center;
-    align-items: center;
-    margin: 10px auto 10px;
-}
 
-.about-detail-container {
-    justify-content: center;
-    flex-direction: column;
-}
 
 .about-containers, 
 .about-detail-container {
     display: flex;
 }
 
-.about-pic {
-    border-radius: 2rem;
-    /* width: 400px;
-    height: 400px ; */
+/* This is for maintaing the details in the about part container */
+.about-containers {
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
 }
 
-.arrow {
-    position: absolute;
-    right: -5rem;
-    bottom: 2.5rem;
+/* This is for how the outer container of the education looks like */
+.about-detail-container {
+    justify-content: center;
+    flex-direction: column;
 }
 
+
+
+/* It is the inner container which containes the details */
 .details-container {
     padding: 1.5rem;
     flex: 1;
@@ -325,16 +340,26 @@ section {
     text-align: center;
 }
 
+/* It contains the all detail in the about part */
 .section-container {
     gap: 4rem;
     height: 80%;
 }
 
-.section-pic-container {
+/* It is not needed now because of the photo is not used */
+/* .section-pic-container {
     height: 400px;
     width: 400px;
     margin: auto 0;
+} */
+
+/* This is the arrow part which is common for all */
+.arrow {
+    position: absolute;
+    right: -5rem;
+    bottom: 2.5rem;
 }
+
 
 /* EXPERIENCE */
 
@@ -343,6 +368,7 @@ section {
     animation: appear 1s ease forwards;
 }
 
+/* This is for the subtitle (h2) in the page */
 .experience-sub-title {
     color: rgb(85, 85, 85);
     font-size: 1.75rem;
@@ -350,12 +376,14 @@ section {
     margin-bottom: 2rem;
 }
 
+/* This is the outer layer of the entire knowledge part of how it should be */
 .experience-detail-container {
     display: flex;
     justify-content: center;
     flex-direction: column;    
 }
 
+/* This is to display of the how the details should be arranged */
 .article-container {
     display: flex;
     text-align: initial;
@@ -365,12 +393,14 @@ section {
     justify-content: space-around;
 }
 
+/* How teh article details are to be placed */
 article {
     display: flex;
     width: 10rem;
     justify-content: space-around;
     gap: 0.5rem;
 }
+
 
 article .icon {
     cursor: default;
@@ -383,6 +413,7 @@ article .icon {
     animation: appear 1s ease forwards;
 }
 
+/* This is to target how the border part to be take place */
 .color-container {
     border-color: rgb(163,163,163);
     background: rgb(255, 255, 255);
@@ -547,7 +578,7 @@ textarea:focus {
 /* Footer */
 
 footer {
-    height: 26vh;
+    height: 10vh;
     margin: 0.1rem;
     animation: appear 1s ease forwards;
 }
@@ -571,6 +602,13 @@ footer p {
         transform: scale(1);
     }
 }
+
+
+
+
+
+
+/* These are the animation part */
 
 @keyframes slideInLeft {
   from {
