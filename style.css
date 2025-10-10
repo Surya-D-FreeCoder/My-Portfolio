@@ -12,6 +12,8 @@
 
 body {
     font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 html {
@@ -69,6 +71,13 @@ a {
 }
     /* What to do when the word got hovers */
 a:hover {
+    color: gray;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    text-decoration-color: rgb(181,181,181);
+}
+
+a.active {
     color: gray;
     text-decoration: underline;
     text-underline-offset: 1rem;
