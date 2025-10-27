@@ -14,6 +14,7 @@
       <div>
         <ul class="nav-links">
            <li><a href="#" onclick="window.scrollTo({ top: 0, behavior: 'instant' }); setTimeout(() => location.href = location.origin + location.pathname, 50); return false;" class="active">Home</a></li>
+          <!-- <li><a href="#home" class="active">Home</a></li> -->
           <li><a href="#about">About</a></li>
           <li><a href="#experience">Knowledge</a></li>
           <li><a href="#project">Projects</a></li>
@@ -24,21 +25,22 @@
 
     <!-- This is for the Mobile View -->
     <nav id="hamburgur-nav">
-      <div class="logo">Surya Kumar R</div>
-      <div class="hamburgur-menu">
-        <div class="hamburgur-icon" onclick="toggleMenu()">
+      <div class="logo">
+        <div class="logosurya" id="home">Surya Kumar R</div>
+      <div class="hamburgur-icon" onclick="toggleMenu()">
           <span></span>
           <span></span>
           <span></span>
         </div>
-        <div class="menu-link">
+      </div>
+       <div class="menu-link">
            <li><a href="#" onclick="window.scrollTo({ top: 0, behavior: 'instant' }); setTimeout(() => location.href = location.origin + location.pathname, 50); return false;">Home</a></li>
+          <!-- <li><a href="#home" class="active">Home</a></li> -->
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
           <li><a href="#experience" onclick="toggleMenu()">Knowledge</a></li>
           <li><a href="#project" onclick="toggleMenu()">Projects</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
-      </div>
     </nav>
 
  
@@ -426,12 +428,12 @@
               <label>Subject: </label>
               <input type="text" name="Subject" id="uSubject" placeholder="Enter Your Subject" required>
             </div>
-            <div class="text-btn">
-              <div class="inputs input-message">
+            <div class="inputs">
                 <label>Message:</label>
                 <textarea name="Message" id="uMessage" placeholder="Enter the Message" required></textarea>
               </div>
-              <button class="btn btn-color-2 form-btn" type="submit">Send Message</button>
+            <div class="inputs">
+              <button class="btn btn-color-1" type="submit">Send Message</button>
             </div>
             <div class="result">
                <p id="status"></p>

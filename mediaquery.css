@@ -26,6 +26,9 @@
     #hamburgur-nav {
         display: flex;
         z-index: 10;
+         max-width: 100%;
+        padding: 0;
+        margin: 0;
     }
 
     #experience, .experience-detail-container {
@@ -71,6 +74,8 @@
 }
 
 @media screen and (max-width:600px) {
+
+   
 
     #profile {  
         position: relative;
@@ -136,27 +141,22 @@
     }
 
     .inputs input {
-        width: 83%;
+        width: 100%;
         display: block;
         margin: 13px auto;
     }
 
     .inputs textarea {
-        width: 84%;
-        height: 125px;
-        position: absolute;
-        left: 0px;
-        margin-top: 4vh;
+        width: 100%;
         
     }
-    .input-message{
-        margin-left: 165px !important;
-        width: 70%;
-        display: block;
-        position: relative;
+    .logo{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
     }
-    .form-btn {
-        margin-top: 22vh;
-    }
+     
+   
 
 }
