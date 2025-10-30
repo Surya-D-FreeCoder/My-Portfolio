@@ -75,7 +75,9 @@
 
 @media screen and (max-width:600px) {
 
-   
+    #hamburgur-nav {
+        height: 17vh;
+    }
 
     #profile {  
         position: relative;
