@@ -560,6 +560,7 @@ textarea:focus {
     color: rgb(53,53,53);
     resize: none;
     padding: 4px 10px;
+    width: 350px;
     /* margin-top: 0px; */
 }
 
@@ -586,6 +587,22 @@ textarea:focus {
     width: 100%;
     text-align: center;
 }
+
+.text-box{
+    display: inline;
+}
+
+.submit-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0px;
+}
+
+.text-part {
+    padding-top: 15px;
+}
+
 
 /* Footer */
 

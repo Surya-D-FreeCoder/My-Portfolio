@@ -149,7 +149,7 @@
     }
 
     .inputs textarea {
-        width: 100%;
+        width: 150%;
         
     }
     .logo{
@@ -157,6 +157,10 @@
         justify-content: space-around;
         align-items: center;
         width: 100%;
+    }
+
+    .submit-btn {
+        padding: 20px 0px 0px 60px;
     }
      
    
