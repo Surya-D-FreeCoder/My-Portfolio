@@ -76,12 +76,12 @@
 @media screen and (max-width:600px) {
 
     #hamburgur-nav {
-        height: 17vh;
+        height: 13vh;
     }
 
     #profile {  
         position: relative;
-        margin-top: 10vh;
+        margin-top: 17vh;
         height: 50vh;
         margin-bottom: 24vh;
         transition: transform 0.5s ease;
