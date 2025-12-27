@@ -4,11 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Surya Kumar R | Portfolio</title>
+    <link rel="shortcut icon" href="./Assets/SK-removebg-preview.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaquery.css" />
   </head>
   <body>
-
+    <canvas id="bg-canvas"></canvas>
     <nav id="desktop-nav">
       <div class="logo">Surya Kumar R</div>
       <div>
@@ -357,6 +358,8 @@
       />
     </section>
 
+    <div id="safety" class="mb-4"></div>
+
     <section id="project" class="animate-on-scroll">
       <p class="section-text-p1">Browse My Recent</p>
       <h1 class="title">Projects</h1>
@@ -365,7 +368,7 @@
           <div class="details-container color-container">
             <div class="article-container">
               <img
-                src="./Assets/Project 1.avif"
+                src="./Assets/EMS.jpg"
                 alt="Project"
                 class="project-img"
               />
@@ -378,12 +381,18 @@
               >
                 Live Demo
               </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/Surya-D-FreeCoder/ems-ui', '_blank')"
+              >
+                Github
+              </button>
             </div>
           </div>
           <div class="details-container color-container">
             <div class="article-container">
               <img
-                src="./Assets/Project 2.avif"
+                src="./Assets/image.png"
                 alt="Project"
                 class="project-img"
               />
@@ -399,10 +408,40 @@
               
             </div>
           </div>
+          <!-- This is 3rd Project part -->
+          <!-- <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./Assets/project-3.png"
+                alt="Project"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project One</h2>
+            <div class="btn-continer">
+              <button
+                class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/Surya-D-FreeCoder', '_blank')">
+                onclick="location.href='https://github.com/Surya-D-FreeCoder' , '_blank'"   
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Surya-D-FreeCoder' "
+              >
+                Live Demo
+              </button>
+            </div>
+          </div> -->
+        </div>
+      </div>
+      <div class="experience-detail-container">
+        <div class="about-containers">
+          
           <div class="details-container color-container">
             <div class="article-container">
               <img
-                src="./Assets/Project 2.avif"
+                src="./Assets/Villa.png"
                 alt="Project"
                 class="project-img"
               />
@@ -426,7 +465,7 @@
           <div class="details-container color-container">
             <div class="article-container">
               <img
-                src="./Assets/Project 2.avif"
+                src="./Assets/Mexant.png"
                 alt="Project"
                 class="project-img"
               />
@@ -560,3 +599,5 @@
     <script src="script.js"></script>
   </body>
 </html>
+
+

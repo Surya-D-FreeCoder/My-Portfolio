@@ -37,6 +37,16 @@ a,
     transition: all 600ms ease;
 }
 
+#bg-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;        /* behind everything */
+  pointer-events: none;
+}
+
 
 /* Desktop Nav */
 
@@ -193,11 +203,14 @@ section {
     margin: 0 10rem;
     box-sizing: border-box;
     min-height: fit-content;
+    scroll-margin-top: 12vh;
 }
 
 
 
 /* PPROFILE SECTION */
+
+
 
 /* This targets the profile section */
 #profile {
@@ -206,6 +219,13 @@ section {
     gap: 5rem;
     margin-top: 15vh;
     height: 80vh;
+    background-color: rgb(230, 230, 230);
+    border-radius: 20px;
+    box-shadow:
+        0 28px 60px rgba(0, 0, 0, 0.10),  /* main depth */
+        0 8px 20px rgba(0, 0, 0, 0.06); 
+
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
     /* animation: appear 1s ease forwards; */
 }
 
@@ -393,6 +413,10 @@ section {
 /* This is the outer layer of the entire knowledge part of how it should be */
 .experience-detail-container {
     display: flex;
+    width: 80%;
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
     justify-content: center;
     flex-direction: column;    
 }

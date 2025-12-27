@@ -101,3 +101,69 @@ window.addEventListener('load', checkScroll);   // on page load
       }
     });
   });
+
+
+const canvas = document.getElementById("bg-canvas");
+const ctx = canvas.getContext("2d");
+
+let width, height;
+let dots = [];
+
+function resizeCanvas() {
+  width = canvas.width = window.innerWidth;
+  height = canvas.height = window.innerHeight;
+}
+window.addEventListener("resize", resizeCanvas);
+resizeCanvas();
+
+// Dot settings
+const DOT_COUNT = 50;
+const DOT_RADIUS = 1.5;
+const SPEED = 0.6;
+
+class Dot {
+  constructor() {
+    this.reset();
+  }
+
+  reset() {
+    this.x = Math.random() * width;
+    this.y = Math.random() * height;
+    this.vx = (Math.random() - 0.5) * SPEED;
+    this.vy = (Math.random() - 0.5) * SPEED;
+  }
+
+  move() {
+    this.x += this.vx;
+    this.y += this.vy;
+
+    if (this.x < 0 || this.x > width || this.y < 0 || this.y > height) {
+      this.reset();
+    }
+  }
+
+  draw() {
+    ctx.beginPath();
+    ctx.arc(this.x, this.y, DOT_RADIUS, 0, Math.PI * 2);
+    ctx.fillStyle = "rgba(0,0,0,0.6)";
+    ctx.fill();
+  }
+}
+
+// Create dots
+for (let i = 0; i < DOT_COUNT; i++) {
+  dots.push(new Dot());
+}
+
+function animate() {
+  ctx.clearRect(0, 0, width, height);
+
+  dots.forEach(dot => {
+    dot.move();
+    dot.draw();
+  });
+
+  requestAnimationFrame(animate);
+}
+
+animate();
