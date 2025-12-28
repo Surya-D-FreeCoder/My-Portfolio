@@ -5,10 +5,6 @@
 }
 
 @media screen and (max-width:1400px) {
-    #profile {
-        height: 83vh;
-        margin-bottom: 6rem;
-    }
 
     .about-containers {
         flex-wrap: wrap;
@@ -79,17 +75,11 @@
         height: 13vh;
     }
 
-    #profile {  
-        position: relative;
+     #profile {
         margin-top: 17vh;
-        height: 50vh;
-        margin-bottom: 24vh;
-        transition: transform 0.5s ease;
+        padding: 3rem 1.5rem 2.5rem;
     }
 
-  #hamburgur-nav.open ~ #profile {
-    transform: translateY(27vh);
-  }
 
       #contact {
         height: 40vh;

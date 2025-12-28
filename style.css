@@ -217,17 +217,23 @@ section {
     display: flex;
     justify-content: center;
     gap: 5rem;
+
+    position: relative;
+    z-index: 1;
+
     margin-top: 15vh;
-    height: 80vh;
+    padding: 4rem 2rem 3rem;   /* controls bottom space */
+
     background-color: rgb(230, 230, 230);
     border-radius: 20px;
-    box-shadow:
-        0 28px 60px rgba(0, 0, 0, 0.10),  /* main depth */
-        0 8px 20px rgba(0, 0, 0, 0.06); 
 
-    transition: transform 0.4s ease, box-shadow 0.4s ease;
-    /* animation: appear 1s ease forwards; */
+    box-shadow:
+        0 28px 60px rgba(0, 0, 0, 0.10),
+        0 8px 20px rgba(0, 0, 0, 0.06);
+
+    height: auto;              /* ✅ key line */
 }
+
 
 /* This targets how the image should look like */
 .section-pic-container {
